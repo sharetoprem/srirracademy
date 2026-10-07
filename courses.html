@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses | Sri RR Academy - TNPSC, RRB, Banking, SSC Coaching</title>
+    <meta name="description" content="Explore comprehensive coaching courses for TNPSC, RRB NTPC, Banking, SSC, Police, TET and more at Sri RR Academy. Pay once, study lifetime with 100% placement support.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1e40af">
+    <meta name="msapplication-TileColor" content="#1e40af">
+    <meta name="theme-color" content="#1e40af">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .course-badge-live,
+.course-badge-soon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.course-badge-live {
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: rgb(255, 0, 0);
+    animation: pulse-live 2s infinite;
+}
+
+.course-badge-soon {
+    background: linear-gradient(135deg, #6c757d, #5a6268);
+    color: white;
+}
+
+@keyframes pulse-live {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Ensure course-card has position relative for badge positioning */
+.course-card {
+    position: relative;
+    overflow: hidden;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Popup Form -->
+        <!-- <div class="popup-overlay" id="popupForm">
+        <div class="popup-form-container">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <h3><i class="fas fa-user-graduate me-2"></i>Enquire Now</h3>
+            
+            <div id="popupStatus" class="alert d-none mb-3" role="alert"></div>
+            
+            <form id="enquiryForm" method="POST" action="enquiry_submit.php" novalidate>
+                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                <select name="education" class="form-select" required>
+                    <option value="" selected disabled>Education - Degree or Non-Degree</option>
+                    <option value="degree">Degree Holder</option>
+                    <option value="non-degree">Non-Degree</option>
+                    <option value="pursuing">Currently Pursuing</option>
+                </select>
+                <select name="userType" class="form-select" required>
+                    <option value="" selected disabled>You are a - Student or Parent</option>
+                    <option value="student">Student</option>
+                    <option value="parent">Parent</option>
+                    <option value="working">Working Professional</option>
+                </select>
+                <select name="course" class="form-select" required>
+                    <option value="" selected disabled>Interested Course</option>
+                    <option value="tnpsc">TNPSC Group 4</option>
+                    
+                    <option value="IBPS">IBPS</option>
+                    <option value="SSC">SSC</option>
+                    <option value="police">Police & Defence</option>
+                </select>
+    <button type="submit" class="btn-submit-popup">
+                Submit Enquiry <i class="fas fa-paper-plane ms-2"></i>
+            </button>
+        </form>
+    </div>
+</div>  -->
+
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="tel:+919751699922"><i class="fas fa-phone"></i>+91 97516 99922</a>
+                    <a href="mailto:support@srirracademy.com"><i class="fas fa-envelope"></i> support@srirracademy.com</a>
+                </div>
+                <div class="col-md-6 text-end"><a href="https://www.facebook.com/srirracademy" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/srirracademy" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@SRIRRACADEMY" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-container logo-container--img">
+                        <img src="assets/image/logo.png" alt="Sri RR Academy">
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">Sri RR Academy</span>
+                        <span class="brand-tagline">Read and Rule</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="admission.html" class="btn-primary-custom">Admission Form</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="page-banner-content" data-aos="fade-up">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Courses</li>
+                    </ol>
+                </nav>
+                <h1>Our Courses</h1>
+                <p>Comprehensive coaching programs for all government competitive exams with pay once, study lifetime benefit</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="features-grid-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Exam Categories</h2>
+                <p>Choose from our wide range of government exam preparation courses</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box">
+                        <div class="feature-icon-box">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>TNPSC Exams</h3>
+                        <p>Group 1, 2, 4, VAO and all other Tamil Nadu Public Service Commission examinations</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box">
+                        <div class="feature-icon-box">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <h3>Railway Exams</h3>
+                        <p>RRB NTPC, Group D, ALP Technician and all Indian Railway recruitment boards</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-box">
+                        <div class="feature-icon-box">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Banking Exams</h3>
+                        <p>IBPS PO, Clerk, SBI PO, Clerk and all public sector bank examinations</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box">
+                        <div class="feature-icon-box">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>SSC Exams</h3>
+                        <p>CGL, CHSL, MTS, GD and all Staff Selection Commission examinations</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box">
+                        <div class="feature-icon-box">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Police & Defence</h3>
+                        <p>TNUSRB, SI, Constable, Army, Navy, Air Force and paramilitary forces</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-box">
+                        <div class="feature-icon-box">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Teaching Exams</h3>
+                        <p>TET, TRB, NET and all teacher recruitment board examinations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Courses Detail -->
+<section class="courses-section">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Detailed Course Information</h2>
+            <p>Comprehensive coaching with study materials, mock tests, and lifetime support</p>
+        </div>
+
+        <!-- TNPSC Courses -->
+        <div class="row mb-5">
+            <div class="col-12" data-aos="fade-up">
+                <h3 class="mb-4" style="color: var(--primary-color); font-family: var(--heading-font); font-weight: 700;">
+                    <i class="fas fa-landmark me-2"></i>TNPSC Courses
+                </h3>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-card">
+                    <span class="course-badge-live">🔴 LIVE</span>
+                    <div class="course-image">
+                        <img src="assets/image/tnpsc4.jpg" alt="TNPSC Group 4">
+                        <span class="course-category">State Government</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>TNPSC Group 4</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Complete CCSE-IV Syllabus</li>
+                            <li><i class="fas fa-check"></i> Tamil & English Medium</li>
+                            <li><i class="fas fa-check"></i> General Studies + Aptitude</li>
+                            <li><i class="fas fa-check"></i> Previous 10 Years Papers</li>
+                            <li><i class="fas fa-check"></i> Current Affairs Daily</li>
+                            <li><i class="fas fa-check"></i> 50+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/tnpsc2.jpg" alt="TNPSC Group 2">
+                        <span class="course-category">State Government</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>TNPSC Group 2</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Prelims + Mains Complete</li>
+                            <li><i class="fas fa-check"></i> Interview Preparation</li>
+                            <li><i class="fas fa-check"></i> General Studies + Aptitude</li>
+                            <li><i class="fas fa-check"></i> Tamil Nadu Special</li>
+                            <li><i class="fas fa-check"></i> Essay Writing Practice</li>
+                            <li><i class="fas fa-check"></i> 75+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/tnpscvao.jpg" alt="TNPSC VAO">
+                        <span class="course-category">State Government</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>TNPSC VAO</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Village Administrative Officer</li>
+                            <li><i class="fas fa-check"></i> Rural Development Focus</li>
+                            <li><i class="fas fa-check"></i> Tamil Nadu History & Culture</li>
+                            <li><i class="fas fa-check"></i> General English/Tamil</li>
+                            <li><i class="fas fa-check"></i> Village Administration</li>
+                            <li><i class="fas fa-check"></i> 40+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Railway Courses -->
+        <div class="row mb-5">
+            <div class="col-12" data-aos="fade-up">
+                <h3 class="mb-4" style="color: var(--primary-color); font-family: var(--heading-font); font-weight: 700;">
+                    <i class="fas fa-train me-2"></i>Railway Courses
+                </h3>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-card">
+                    <span class="course-badge-live">🔴 LIVE</span>
+                    <div class="course-image">
+                        <img src="assets/image/rrbntpc.jpg" alt="RRB NTPC">
+                        <span class="course-category">Railway</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>RRB NTPC</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> CBT-1 & CBT-2 Complete</li>
+                            <li><i class="fas fa-check"></i> Mathematics Mastery</li>
+                            <li><i class="fas fa-check"></i> Reasoning & General Intelligence</li>
+                            <li><i class="fas fa-check"></i> General Awareness Special</li>
+                            <li><i class="fas fa-check"></i> Typing Test Practice</li>
+                            <li><i class="fas fa-check"></i> 100+ CBT Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/rrbgroupd.jpg" alt="RRB Group D">
+                        <span class="course-category">Railway</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>RRB Group D</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Level-1 Posts Complete</li>
+                            <li><i class="fas fa-check"></i> Mathematics & Reasoning</li>
+                            <li><i class="fas fa-check"></i> General Science Focus</li>
+                            <li><i class="fas fa-check"></i> Current Affairs</li>
+                            <li><i class="fas fa-check"></i> PET Preparation</li>
+                            <li><i class="fas fa-check"></i> 80+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/rrbalp.jpg" alt="RRB ALP">
+                        <span class="course-category">Railway</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>RRB ALP Technician</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Assistant Loco Pilot</li>
+                            <li><i class="fas fa-check"></i> Technical Subjects</li>
+                            <li><i class="fas fa-check"></i> CBT-1 & CBT-2</li>
+                            <li><i class="fas fa-check"></i> Computer Based Aptitude Test</li>
+                            <li><i class="fas fa-check"></i> Technical Drawing</li>
+                            <li><i class="fas fa-check"></i> 60+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banking Courses -->
+        <div class="row mb-5">
+            <div class="col-12" data-aos="fade-up">
+                <h3 class="mb-4" style="color: var(--primary-color); font-family: var(--heading-font); font-weight: 700;">
+                    <i class="fas fa-university me-2"></i>Banking Courses
+                </h3>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/bankpo.jpg" alt="Bank PO">
+                        <span class="course-category">Banking</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Bank PO (IBPS & SBI)</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Prelims + Mains + Interview</li>
+                            <li><i class="fas fa-check"></i> Quantitative Aptitude</li>
+                            <li><i class="fas fa-check"></i> Reasoning Ability</li>
+                            <li><i class="fas fa-check"></i> English Language</li>
+                            <li><i class="fas fa-check"></i> General/Economy Awareness</li>
+                            <li><i class="fas fa-check"></i> Descriptive Writing</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/bankclerk.jpg" alt="Bank Clerk">
+                        <span class="course-category">Banking</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Bank Clerk</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> IBPS & SBI Clerk Complete</li>
+                            <li><i class="fas fa-check"></i> Numerical Ability</li>
+                            <li><i class="fas fa-check"></i> Reasoning Ability</li>
+                            <li><i class="fas fa-check"></i> English Language</li>
+                            <li><i class="fas fa-check"></i> Computer Knowledge</li>
+                            <li><i class="fas fa-check"></i> 100+ Sectional Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/bankso.jpg" alt="Bank SO">
+                        <span class="course-category">Banking</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Bank SO Specialist</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> IT, HR, Marketing, Law</li>
+                            <li><i class="fas fa-check"></i> Professional Knowledge</li>
+                            <li><i class="fas fa-check"></i> Banking Awareness</li>
+                            <li><i class="fas fa-check"></i> Quant & Reasoning</li>
+                            <li><i class="fas fa-check"></i> English Language</li>
+                            <li><i class="fas fa-check"></i> Specialist Study Material</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SSC Courses -->
+        <div class="row mb-5">
+            <div class="col-12" data-aos="fade-up">
+                <h3 class="mb-4" style="color: var(--primary-color); font-family: var(--heading-font); font-weight: 700;">
+                    <i class="fas fa-building me-2"></i>SSC Courses
+                </h3>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/ssccgl.jpg" alt="SSC CGL">
+                        <span class="course-category">SSC</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>SSC CGL</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Tier I, II, III & IV Complete</li>
+                            <li><i class="fas fa-check"></i> Quantitative Aptitude</li>
+                            <li><i class="fas fa-check"></i> General Intelligence</li>
+                            <li><i class="fas fa-check"></i> English Language</li>
+                            <li><i class="fas fa-check"></i> General Awareness</li>
+                            <li><i class="fas fa-check"></i> Computer Proficiency</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/sscchsl.jpg" alt="SSC CHSL">
+                        <span class="course-category">SSC</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>SSC CHSL</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> LDC, DEO, PA/SA Posts</li>
+                            <li><i class="fas fa-check"></i> Tier I & II Complete</li>
+                            <li><i class="fas fa-check"></i> Typing Test Practice</li>
+                            <li><i class="fas fa-check"></i> All Subjects Covered</li>
+                            <li><i class="fas fa-check"></i> Previous Papers</li>
+                            <li><i class="fas fa-check"></i> 80+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/sscmts.jpg" alt="SSC MTS">
+                        <span class="course-category">SSC</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>SSC MTS & GD</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Multi Tasking Staff</li>
+                            <li><i class="fas fa-check"></i> General Duty Constable</li>
+                            <li><i class="fas fa-check"></i> Physical Test Guidance</li>
+                            <li><i class="fas fa-check"></i> Complete Syllabus</li>
+                            <li><i class="fas fa-check"></i> Easy to Understand</li>
+                            <li><i class="fas fa-check"></i> 60+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Police & Defence -->
+        <div class="row mb-5">
+            <div class="col-12" data-aos="fade-up">
+                <h3 class="mb-4" style="color: var(--primary-color); font-family: var(--heading-font); font-weight: 700;">
+                    <i class="fas fa-shield-alt me-2"></i>Police & Defence Courses
+                </h3>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/tnusrb.jpg" alt="TNUSRB">
+                        <span class="course-category">Defence</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>TNUSRB Police</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Constable & SI</li>
+                            <li><i class="fas fa-check"></i> Physical Test Training</li>
+                            <li><i class="fas fa-check"></i> Written Exam Complete</li>
+                            <li><i class="fas fa-check"></i> Tamil Nadu Special</li>
+                            <li><i class="fas fa-check"></i> Endurance Training</li>
+                            <li><i class="fas fa-check"></i> 50+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/army.jpg" alt="Army">
+                        <span class="course-category">Defence</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Army, Navy, Air Force</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> NDA, CDS, AFCAT</li>
+                            <li><i class="fas fa-check"></i> Mathematics & GAT</li>
+                            <li><i class="fas fa-check"></i> English & GK</li>
+                            <li><i class="fas fa-check"></i> SSB Interview</li>
+                            <li><i class="fas fa-check"></i> Physical Training</li>
+                            <li><i class="fas fa-check"></i> Medical Guidance</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/cisf.jpg" alt="CRPF">
+                        <span class="course-category">Defence</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Paramilitary Forces</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> CRPF, BSF, CISF</li>
+                            <li><i class="fas fa-check"></i> ITBP, SSB, Assam Rifles</li>
+                            <li><i class="fas fa-check"></i> Constable & SI</li>
+                            <li><i class="fas fa-check"></i> Physical Efficiency Test</li>
+                            <li><i class="fas fa-check"></i> Trade Test</li>
+                            <li><i class="fas fa-check"></i> Complete Study Material</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teaching Exams -->
+        <div class="row mb-5">
+            <div class="col-12" data-aos="fade-up">
+                <h3 class="mb-4" style="color: var(--primary-color); font-family: var(--heading-font); font-weight: 700;">
+                    <i class="fas fa-graduation-cap me-2"></i>Teaching Exam Courses
+                </h3>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/tntet.jpg" alt="TET">
+                        <span class="course-category">Teaching</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>TET - Teacher Eligibility Test</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Paper I & II</li>
+                            <li><i class="fas fa-check"></i> Child Development</li>
+                            <li><i class="fas fa-check"></i> Pedagogy & Psychology</li>
+                            <li><i class="fas fa-check"></i> Subject Specialization</li>
+                            <li><i class="fas fa-check"></i> Tamil & English</li>
+                            <li><i class="fas fa-check"></i> 40+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/trb.jpg" alt="TRB">
+                        <span class="course-category">Teaching</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>TRB - Teachers Recruitment Board</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> PG Assistant</li>
+                            <li><i class="fas fa-check"></i> BT Assistant</li>
+                            <li><i class="fas fa-check"></i> Subject Methodology</li>
+                            <li><i class="fas fa-check"></i> General Knowledge</li>
+                            <li><i class="fas fa-check"></i> Education Psychology</li>
+                            <li><i class="fas fa-check"></i> 50+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="course-card">
+                    <span class="course-badge-soon">⏳ COMING SOON</span>
+                    <div class="course-image">
+                        <img src="assets/image/ugc.jpg" alt="NET">
+                        <span class="course-category">Teaching</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>UGC NET / SET</h3>
+                        <ul class="course-features-list">
+                            <li><i class="fas fa-check"></i> Paper I & II</li>
+                            <li><i class="fas fa-check"></i> Teaching Aptitude</li>
+                            <li><i class="fas fa-check"></i> Research Methodology</li>
+                            <li><i class="fas fa-check"></i> Subject Specialization</li>
+                            <li><i class="fas fa-check"></i> Previous Papers</li>
+                            <li><i class="fas fa-check"></i> 60+ Mock Tests</li>
+                        </ul>
+                        <div class="course-footer">
+                            <a href="admission.html" class="btn-enroll-course">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Why Choose Our Courses -->
+    <section class="facilities-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Why Choose Our Courses</h2>
+                <p>We provide comprehensive coaching that guarantees success</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="facility-card">
+                        <div class="facility-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3>Lifetime Validity</h3>
+                        <p>Pay once and attend classes until you clear the exam</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="facility-card">
+                        <div class="facility-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Expert Faculty</h3>
+                        <p>Learn from experienced teachers and retired officials</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="facility-card">
+                        <div class="facility-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Study Materials</h3>
+                        <p>Comprehensive books, notes, and online resources</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="facility-card">
+                        <div class="facility-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>CBT Practice</h3>
+                        <p>50+ computer systems for online exam practice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Comparison Table -->
+    <section class="about-story-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Course Comparison</h2>
+                <p>Find the perfect course for your career goals</p>
+            </div>
+            <div class="table-responsive" data-aos="fade-up">
+                <table class="table table-bordered table-hover" style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                    <thead style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); color: #fff;">
+                        <tr>
+                            <th style="padding: 20px;">Course</th>
+                            <th style="padding: 20px;">Duration</th>
+                            <th style="padding: 20px;">Mock Tests</th>
+                            <th style="padding: 20px;">Study Material</th>
+                            <th style="padding: 20px;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 15px; font-weight: 600;">TNPSC Group 4</td>
+                            <td style="padding: 15px;">6 Months</td>
+                            <td style="padding: 15px;">50+</td>
+                            <td style="padding: 15px;"><i class="fas fa-check text-success"></i></td>
+                            <td style="padding: 15px;"><a href="admission.html" class="btn btn-sm btn-primary" style="background: var(--primary-color); border: none;">Enroll</a></td>
+                        </tr>
+                        <tr style="background: #f8f9fa;">
+                            <td style="padding: 15px; font-weight: 600;">RRB NTPC</td>
+                            <td style="padding: 15px;">8 Months</td>
+                            <td style="padding: 15px;">100+</td>
+                            <td style="padding: 15px;"><i class="fas fa-check text-success"></i></td>
+                            <td style="padding: 15px;"><a href="admission.html" class="btn btn-sm btn-primary" style="background: var(--primary-color); border: none;">Enroll</a></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; font-weight: 600;">Bank PO</td>
+                            <td style="padding: 15px;">1 Year</td>
+                            <td style="padding: 15px;">100+</td>
+                            <td style="padding: 15px;"><i class="fas fa-check text-success"></i></td>
+                            <td style="padding: 15px;"><a href="admission.html" class="btn btn-sm btn-primary" style="background: var(--primary-color); border: none;">Enroll</a></td>
+                        </tr>
+                        <tr style="background: #f8f9fa;">
+                            <td style="padding: 15px; font-weight: 600;">SSC CGL</td>
+                            <td style="padding: 15px;">1 Year</td>
+                            <td style="padding: 15px;">80+</td>
+                            <td style="padding: 15px;"><i class="fas fa-check text-success"></i></td>
+                            <td style="padding: 15px;"><a href="admission.html" class="btn btn-sm btn-primary" style="background: var(--primary-color); border: none;">Enroll</a></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; font-weight: 600;">Police & Defence</td>
+                            <td style="padding: 15px;">8 Months</td>
+                            <td style="padding: 15px;">50+</td>
+                            <td style="padding: 15px;"><i class="fas fa-check text-success"></i></td>
+                            <td style="padding: 15px;"><a href="admission.html" class="btn btn-sm btn-primary" style="background: var(--primary-color); border: none;">Enroll</a></td>
+                        </tr>
+                        <tr style="background: #f8f9fa;">
+                            <td style="padding: 15px; font-weight: 600;">TET/TRB</td>
+                            <td style="padding: 15px;">6 Months</td>
+                            <td style="padding: 15px;">40+</td>
+                            <td style="padding: 15px;"><i class="fas fa-check text-success"></i></td>
+                            <td style="padding: 15px;"><a href="admission.html" class="btn btn-sm btn-primary" style="background: var(--primary-color); border: none;">Enroll</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container" data-aos="fade-up">
+            <h2>Not Sure Which Course to Choose?</h2>
+            <p>Contact our career counselors for free guidance. We'll help you select the best course based on your qualification and career goals.</p>
+            <a href="tel:+919751699922" class="btn-white me-3"><i class="fas fa-phone me-2"></i>Call Now</a>
+            <a href="admission.html" class="btn-white"><i class="fas fa-user-graduate me-2"></i>Get Free Counseling</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <div class="brand-footer">
+                            <div class="logo-container logo-container--img" aria-label="Sri RR Academy logo">
+                                <img src="assets/image/logo.png" alt="Sri RR Academy">
+                            </div>
+                            <div>
+                                <div class="brand-name">Sri RR Academy</div>
+                                <small style="color: rgba(255,255,255,0.6);">Read and Rule</small>
+                            </div>
+                        </div>
+                        <p>Sri RR Academy is Tamil Nadu's premier coaching institute for government competitive exams. With 15+ years of experience and 250+ successful placements, we are committed to making your dreams come true.</p>
+                        <div class="social-links-footer">
+                            <a href="https://www.facebook.com/srirracademy" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/srirracademy" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@SRIRRACADEMY" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="aboutus.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h3>Courses</h3>
+                        <ul>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> TNPSC</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> RRB</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Banking</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> SSC</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Police</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 16 & 17, AR Plaza, E, Basement Floor, North Veli Street, Simmakkal, Madurai 625 001</li>
+                            <li><i class="fas fa-phone"></i> +91 97516 99922</li>
+                            <li><i class="fas fa-envelope"></i> support@srirracademy.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Sun: 9 AM - 9 PM</li>
+                        </ul>
+                        
+                        <!-- <h3 class="mt-4">Newsletter</h3>
+                        <form class="mt-3" data-newsletter>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email" required>
+                                <button class="btn" type="submit" style="background: var(--secondary-color); color: #fff; border: none;">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sri RR Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions: WhatsApp + Call (left) -->
+    <div class="floating-actions" aria-label="Quick contact actions">
+        <a href="https://wa.me/919003244002" class="floating-btn floating-btn--whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919751699922" class="floating-btn floating-btn--call" aria-label="Call now">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top (right) -->
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

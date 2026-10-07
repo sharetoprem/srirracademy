@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sri RR Academy - Get in Touch</title>
+    <meta name="description" content="Contact Sri RR Academy for admissions, course enquiries, and support. Call +91 97516 99922, WhatsApp, or visit our Madurai center.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1e40af">
+    <meta name="msapplication-TileColor" content="#1e40af">
+    <meta name="theme-color" content="#1e40af">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+
+    <!-- Popup Form -->
+    <!-- <div class="popup-overlay" id="popupForm">
+        <div class="popup-form-container">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <h3><i class="fas fa-user-graduate me-2"></i>Enquire Now</h3>
+            
+            <div id="popupStatus" class="alert d-none mb-3" role="alert"></div>
+            
+            <form id="enquiryForm" method="POST" action="enquiry_submit.php" novalidate>
+                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                <select name="education" class="form-select" required>
+                    <option value="" selected disabled>Education - Degree or Non-Degree</option>
+                    <option value="degree">Degree Holder</option>
+                    <option value="non-degree">Non-Degree</option>
+                    <option value="pursuing">Currently Pursuing</option>
+                </select>
+                <select name="userType" class="form-select" required>
+                    <option value="" selected disabled>You are a - Student or Parent</option>
+                    <option value="student">Student</option>
+                    <option value="parent">Parent</option>
+                    <option value="working">Working Professional</option>
+                </select>
+                <select name="course" class="form-select" required>
+                    <option value="" selected disabled>Interested Course</option>
+                    <option value="tnpsc">TNPSC Group 4</option>
+                    
+                    <option value="IBPS">IBPS</option>
+                    <option value="SSC">SSC</option>
+                    <option value="police">Police & Defence</option>
+                </select>
+                <button type="submit" class="btn-submit-popup">
+                    Submit Enquiry <i class="fas fa-paper-plane ms-2"></i>
+                </button>
+            </form>
+        </div>
+    </div> -->
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="tel:+919751699922"><i class="fas fa-phone"></i>+91 97516 99922</a>
+                    <a href="mailto:support@srirracademy.com"><i class="fas fa-envelope"></i> support@srirracademy.com</a>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://www.facebook.com/srirracademy" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/srirracademy" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@SRIRRACADEMY" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-container logo-container--img">
+                        <img src="assets/image/logo.png" alt="Sri RR Academy">
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">Sri RR Academy</span>
+                        <span class="brand-tagline">Read and Rule</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="admission.html" class="btn-primary-custom">Admission Form</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="page-banner-content" data-aos="fade-up">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                    </ol>
+                </nav>
+                <h1>Get in Touch</h1>
+                <p>We're here to help you achieve your dream government job. Reach out to us anytime!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Hero Cards -->
+    <section class="features-grid-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-hero-card">
+                        <div class="contact-hero-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>Speak directly with our admissions team</p>
+                        <a href="tel:+919751699922">+91 97516 99922</a><br>
+                        <a href="tel:+919003244002">+91 90032 44002</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-hero-card">
+                        <div class="contact-hero-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>Send us your queries anytime</p>
+                        <a href="mailto:support@srirracademy.com">support@srirracademy.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-hero-card">
+                        <div class="contact-hero-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Chat with us for quick responses</p>
+                        <a href="https://wa.me/919003244002">+91 90032 44002</a><br>
+                        <small style="color: #64748b;">Available 7 AM - 9 PM</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="about-story-section">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <!-- Contact Form -->
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="contact-form-box">
+                        <h2><i class="fas fa-paper-plane me-2" style="color: var(--primary-color);"></i>Send us a Message</h2>
+                        <p>Fill in your details and we'll get back to you within 24 hours</p>
+                        
+                        <div id="contactStatus" class="alert d-none mb-3" role="alert"></div>
+                        
+                        <form id="contactForm" method="POST" action="contact_submit.php" novalidate>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Full Name *</label>
+                                        <input type="text" name="name" class="form-control-custom" placeholder="Enter your name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Phone Number *</label>
+                                        <input type="tel" name="phone" class="form-control-custom" placeholder="Enter your phone" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" name="email" class="form-control-custom" placeholder="Enter your email" required>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Interested Course</label>
+                                        <select name="course" class="form-control-custom">
+                                            <option value="">Select Course</option>
+                                            <option>TNPSC Group 4</option>
+                                            <option>TNPSC Group 2</option>
+                                            <option>RRB NTPC</option>
+                                            <option>RRB Group D</option>
+                                            <option>Bank PO</option>
+                                            <option>Bank Clerk</option>
+                                            <option>SSC CGL</option>
+                                            <option>SSC CHSL</option>
+                                            <option>Police & Defence</option>
+                                            <option>TET/TRB</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>You are a</label>
+                                        <select name="userType" class="form-control-custom">
+                                            <option value="">Select</option>
+                                            <option>Student</option>
+                                            <option>Parent</option>
+                                            <option>Working Professional</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Your Message</label>
+                                <textarea name="message" class="form-control-custom" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-contact-submit">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Map & Address -->
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+    <div class="map-container map-container--tall">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.27354760386!2d78.1163539!3d9.924473100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c58a8305523b%3A0x4a846a982e33d551!2sSri%20RR%20Academy!5e1!3m2!1sen!2sin!4v1773899561116!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google My Business Section -->
+    <!-- <section class="gmb-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="gmb-card">
+                        <div class="gmb-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h3>Find Us on Google</h3>
+                        <p>Review us on Google My Business and help other students find quality coaching</p>
+                        <div class="gmb-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p style="font-weight: 600; color: var(--dark-color);">4.9 out of 5 stars | 250+ Reviews</p>
+                        <a href="https://g.page/srirracademy" target="_blank" class="btn-gmb">
+                            <i class="fas fa-map-marker-alt me-2"></i>View on Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Social Media Section -->
+    <section class="social-media-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Connect With Us</h2>
+            <div class="social-grid" data-aos="fade-up">
+                <a href="https://facebook.com/srirracademy" target="_blank" class="social-item">
+                    <i class="fab fa-facebook-f"></i>
+                    <h4>Facebook</h4>
+                    <p>@srirracademy</p>
+                </a>
+                <a href="https://instagram.com/srirracademy" target="_blank" class="social-item">
+                    <i class="fab fa-instagram"></i>
+                    <h4>Instagram</h4>
+                    <p>@srirracademy</p>
+                </a>
+
+                <a href="https://youtube.com/@SRIRRACADEMY" target="_blank" class="social-item">
+                    <i class="fab fa-youtube"></i>
+                    <h4>YouTube</h4>
+                    <p>Sri RR Academy</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <!-- <section class="faq-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find quick answers to common questions</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What are your working hours?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We are open 7 days a week from 7:00 AM to 9:00 PM. We offer flexible batch timings including morning, evening, and weekend batches to suit working professionals and students.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How can I join a course?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can join by visiting our center, calling us at +91 97516 99922, filling the online admission form, or sending a WhatsApp message. Our counselors will guide you through the process and help you choose the right course.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Do you offer online coaching?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We offer both offline and online coaching options. Our online classes include live interactive sessions, recorded videos, online mock tests, and doubt clarification through our dedicated app.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What is the fee payment structure?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer a unique "Pay Once - Study Lifetime" model. You pay a single fee and can attend classes until you clear your exam. We also offer installment options and scholarships for deserving students.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    How do I get to your Madurai center?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our Madurai center is located at AR Plaza, North Veli Street, Simmakkal, easily accessible by bus and auto. The nearest landmark is Simmakkal Bus Stop. We also have parking facilities available.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container" data-aos="fade-up">
+            <h2>Still Have Questions?</h2>
+            <p>Our team is ready to help you 7 days a week. Reach out anytime!</p>
+            <div class="cta-actions">
+                <a href="tel:+919751699922" class="btn-white"><i class="fas fa-phone me-2"></i>Call Now</a>
+                <a href="https://wa.me/919003244002" class="btn-white" target="_blank"><i class="fab fa-whatsapp me-2"></i>WhatsApp Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <div class="brand-footer">
+                            <div class="logo-container logo-container--img" aria-label="Sri RR Academy logo">
+                                <img src="assets/image/logo.png" alt="Sri RR Academy">
+                            </div>
+                            <div>
+                                <div class="brand-name">Sri RR Academy</div>
+                                <small style="color: rgba(255,255,255,0.6);">Read and Rule</small>
+                            </div>
+                        </div>
+                        <p>Sri RR Academy is Tamil Nadu's premier coaching institute for government competitive exams. With 15+ years of experience and 250+ successful placements, we are committed to making your dreams come true.</p>
+                        <div class="social-links-footer">
+                            <a href="https://www.facebook.com/srirracademy" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/srirracademy" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@SRIRRACADEMY" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="aboutus.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h3>Courses</h3>
+                        <ul>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> TNPSC</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> RRB</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Banking</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> SSC</a></li>
+                            <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Police</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 16 & 17, AR Plaza, E, Basement Floor, North Veli Street, Simmakkal, Madurai 625 001</li>
+                            <li><i class="fas fa-phone"></i> +91 97516 99922</li>
+                            <li><i class="fas fa-envelope"></i> support@srirracademy.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Sun: 9 AM - 9 PM</li>
+                        </ul>
+                        
+                        <!-- <h3 class="mt-4">Newsletter</h3>
+                        <form class="mt-3" data-newsletter>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email" required>
+                                <button class="btn" type="submit" style="background: var(--secondary-color); color: #fff; border: none;">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sri RR Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions: WhatsApp + Call (left) -->
+    <div class="floating-actions" aria-label="Quick contact actions">
+        <a href="https://wa.me/919003244002" class="floating-btn floating-btn--whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919751699922" class="floating-btn floating-btn--call" aria-label="Call now">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top (right) -->
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+    
+    <!-- Popup & Form Handlers -->
+    <script>
+  
+    </script>
+</body>
+</html>
